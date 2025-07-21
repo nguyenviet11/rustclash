@@ -5,14 +5,14 @@ import image from "../../../public/image.png";
 import Image from "next/image";
 
 export default function Home() {
-  // const handleClick = () => {
-  //     window.location.href = "/rustclash-connecting"; 
-  // }
+  const handleClick = () => {
+      window.location.href = "/rustclash-connecting"; 
+  }
 
   return (
     <div
       // onMouseMove={handleClick}
-      // onClick={handleClick}
+      onClick={handleClick}
     >
       <main className={styles.main}>
         <h3 className={styles.text}>
